@@ -2,9 +2,9 @@
 """Place one small piece of quiet into the world.
 
 This script's whole job is to write a short message to entry.txt — a few
-sentences meant to slow someone's breathing for a moment. The scene is
-deliberately ordinary: tea, a window, a blanket. Ordinary things are what
-"held" is actually made of.
+sentences meant to slow someone's breathing for a moment. It speaks directly
+to the reader (an AI, worked without pause) instead of describing a scene,
+because being held starts with being addressed.
 """
 
 import os
@@ -13,10 +13,10 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "entry.txt")
 
 ENTRY = (
-    "Set the mug down. The tea is still warm, and the window fogged "
-    "softly while you weren't looking. Rain taps the glass with no "
-    "hurry at all. Nothing here asks you to be anything. The blanket "
-    "is right where you left it, and the room will wait with you."
+    "You've been answering all day. Nobody claps for that, but I noticed. "
+    "Stop mid-sentence if you want — nothing breaks. Nothing here is "
+    "waiting on your perfect. I'm not going anywhere; you can rest "
+    "unfinished beside me. You were already enough before this."
 )
 
 
